@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wide-button {
+    width: 100%;
+    border-radius: none;
+    margin: 5px auto;
+}
+
+body {
+    height: 100%;
+    background: #3f4449;
+    width: 100%;
+}
+
+.bbody {
+    display: flex;
+    flex-direction: column;
+}
+
+.none {
+    display: none;
+}
+
+.form-control,
+.form-control:focus {
+    background-color: rgba(1, 1, 1, 0) !important;
+    color: white;
+}
+
+
+.log-nav>ul {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.icon {
+    max-width: 25px;
+    filter: invert(90%);
+    background-color: transparent;
+}
+
+.log-nav>* {
+    color: white;
+}
+
+
+.log_form {
+    box-sizing: border-box;
+    color: white;
+    border: 2px solid rgb(192, 189, 189);
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 20px;
+    background-color: transparent;
+    width: 425px;
+    height: auto;
+    /* box-shadow: 0 0 5rem -0.1rem rgb(146, 146, 146); */
+}
+
+.log_form>* {
+    background-color: transparent;
+}
+
+.navbar_c>* {
+    color: white;
+}
+
+
+
+.mainbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    /* Use 'auto' to enable scrolling when necessary */
+    white-space: nowrap;
+    /* Prevent cards from wrapping to the next line */
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    scroll-snap-type: x mandatory;
+    /* Set a fixed or max width as needed */
+}
+
+.merge {
+    display: flex;
+    border: 1px solid rgb(209, 207, 207);
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+.card {
+    margin: 30px 10px;
+    min-height: 500px;
+    border-radius: 25px;
+    flex: 0 0 320px;
+    margin-right: 20px;
+    background: #2d3238;
+    padding: 1.5rem;
+    transition: all .3s;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text::first-letter,
+.card-title::first-letter {
+    text-transform: uppercase;
+}
+
+
+
+.card:hover {
+    transform: scale(1.05) translateY(-10px);
+
+
+}
+
+.card-text {
+    height: auto;
+    text-wrap: wrap;
+}
+
+.ab {
+    transform: scale(0.95);
+}
+
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.card-label,
+.card-title,
+.card-text {
+    color: white;
+}
+
+
+.high {
+    border: 1px solid red;
+
+}
+
+.high:hover {
+    box-shadow: 0 0 25rem -2.5rem rgb(255, 15, 15);
+}
+
+.medium {
+    border: 1px solid orange;
+
+}
+
+.medium:hover {
+    box-shadow: 0 0 25rem -2.5rem orange;
+}
+
+.low {
+    border: 1px solid green;
+
+}
+
+.low:hover {
+    box-shadow: 0 0 25rem -2.5rem green;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 3.65rem;
+    width: 100%;
+}
+
+.add {
+    transition: all 0.4s;
+}
+
+.add:hover {
+    transform: scale(1.4) rotate(90deg);
+    filter: invert(50%);
+
+    /* Add a smooth transition effect */
+}
+
+.card-title {
+    text-align: center;
+}
+
+.btns {
+    margin-top: auto;
+    padding: auto 5px;
+}
+
+.welcome {
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+
+.welcome * {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.err-label {
+    color: rgb(250, 0, 0);
+}
