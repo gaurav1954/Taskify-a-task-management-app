@@ -112,6 +112,7 @@ body {
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card-text::first-letter,
